@@ -1,0 +1,765 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.checkbtn{
+    font-size: 50px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin: 5px 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn:hover{
+    color: rgb(232, 117, 117);
+}
+
+#check{
+    display: none;
+}
+
+.title{
+    width: 100%;
+    background-color: rgb(173, 7, 7);
+    color: white;
+    position: fixed;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    margin-top: 37px;
+}
+
+nav button{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: red;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: red;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid red;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+span{
+    color: red;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(255,0,0,0.5), #030f96), url(asserts/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text h3{
+    font-size: 40px;
+    color: rgb(232, 204, 204);
+    margin-bottom: 10px;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero-text button{
+    padding: 10px;
+    background-color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    color: red;
+}
+
+.letter{
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(240, 225, 225);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.letter img{
+    width: 50%;
+}
+
+.letter form{
+    margin: 3%;
+}
+
+.letter input{
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid red;
+    padding: 10px;
+    font-size: 17px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.letter button{
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.letter h2{
+    font-size: 40px;
+    color: red;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.about img{
+    width: 40%;
+    height: 100%;
+}
+
+.about-text{
+    margin: 5%;
+    height: 100%;
+}
+
+.about-text h1{
+    font-size: 50px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.about-text p{
+    font-size: 18px;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.values{
+    width: 100%;
+    background-color: rgb(240, 225, 225);
+    padding: 5%;
+}
+
+.values h1{
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+
+.values-container{
+    max-width: 100%;
+    min-height: 400px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.value-box{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.heading h1{
+    color: white;
+    font-size: 50px;
+}
+
+.value-box .heading{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 30% 80% 20% 20%;
+}
+
+#value-box1 .heading{
+    background-color: red;
+}
+#value-box2 .heading{
+    background-color: indigo;
+}
+#value-box3 .heading{
+    background-color: green;
+}
+#value-box4 .heading{
+    background-color: blueviolet;
+}
+
+.value-box p{
+    font-size: 18px;
+}
+
+.services{
+    margin-top: 5%;
+}
+
+.services-container{
+    max-width: 100%;
+    min-height: 400px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.services h1{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+
+.service-box{
+    background-color: white;
+    margin: 20px;
+    width: 250px;
+    height: 350px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 2px 2px 3px rgb(237, 228, 228);
+    transition: transform .4s;
+}
+
+.service-box h2{
+    text-align: center;
+    margin: 20px 20px 30px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-box p{
+    margin: 20px;
+}
+
+.services .services-container .service-box:hover{
+    /* transform: scale(1.1); */
+    background-color: red;
+    color: white;
+}
+
+
+.gallery{
+    padding: 10px;
+    padding-top: 5%;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr;
+    grid-template-areas: 
+    'pic1 pic2 pic3 pic4'
+    'pic1 pic2 pic3 pic4'
+    'pic1 pic5 pic5 pic4';
+    grid-gap: 1rem;
+    text-align: center;
+    margin: 0 7% 0 7%;
+}
+
+.pic1{
+    background-image: url(asserts/1.jpg);
+    grid-area: pic1;
+    cursor: pointer;
+}
+
+.pic1:hover{
+    background: linear-gradient(rgba(255,0,0,0.5), #030f96), url(asserts/1.jpg);
+}
+
+.pic2{
+    background-image: url(asserts/2.jpg);
+    grid-area: pic2;
+    cursor: pointer;
+}
+
+.pic2:hover{
+    background: linear-gradient(rgba(255,0,0,0.5), #030f96), url(asserts/2.jpg);
+}
+
+.pic3{
+    background-image: url(asserts/3.jpg);
+    grid-area: pic3;
+    cursor: pointer;
+}
+
+.pic3:hover{
+    background: linear-gradient(rgba(255,0,0,0.5), #030f96), url(asserts/3.jpg);
+}
+
+.pic4{
+    background-image: url(asserts/4.jpg);
+    grid-area: pic4;
+    cursor: pointer;
+}
+
+.pic4:hover{
+    background: linear-gradient(rgba(255,0,0,0.5), #030f96), url(asserts/4.jpg);
+}
+
+.pic5{
+    background-image: url(asserts/5.jpg);
+    grid-area: pic5;
+    cursor: pointer;
+}
+
+.pic5:hover{
+    background: linear-gradient(rgba(255,0,0,0.5), #030f96), url(asserts/5.jpg);
+}
+
+#gallery-card{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--main-padding);
+    transition: all .50s ease;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    width: 100%;
+    background-color: rgb(240, 225, 225);
+}
+
+
+hr{
+    color: white;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    border-bottom: 2px solid white;
+    list-style: none;
+}
+
+.contact-container h4{
+    color: red;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-container li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.contact-container li a{
+    color: rgb(232, 117, 117);
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.contact-container li a:hover{
+    text-decoration: underline;
+}
+
+.contact-container #note{
+    width: 30%;
+}
+
+.contact-container #note h2{
+    font-size: 40px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.contact-container #note p{
+    color: rgb(232, 117, 117);
+    font-size: 17px;
+    line-height: 1.4em;
+    letter-spacing: .6px;
+    margin-bottom: 30px;
+}
+
+#socials a{
+    margin: 7px;
+    font-size: 20px;
+}
+
+.social-links a:hover{
+    color: white;
+}
+
+.copy{
+    margin: 20px;
+    font-size: 17px;
+    color: rgb(232, 117, 117);
+}
+
+
+@media screen and (max-width: 1280px) {
+    .logo a{
+        font-size: 30px;
+    }
+
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+
+    .values-container{
+        gap: .5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .value-box .heading{
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr 1fr;
+        grid-template-areas: 
+        'pic1 pic1 pic2 pic2'
+        'pic1 pic1 pic2 pic2'
+        'pic3 pic3 pic4 pic4'
+        'pic3 pic3 pic4 pic4'
+        'pic3 pic3 pic5 pic5';
+    }
+
+    .hero-text{
+        width: 100;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about-text h1{
+        text-align: center;
+    }
+
+    .about img{
+        margin-top: 10%;
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .hero-text h3{
+        font-size: 30px;
+    }
+    
+    .hero-text h1{
+        font-size: 40px;
+    }
+    
+    .hero-text p{
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .hero-text button{
+        padding: 10px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .service-box{
+        margin: 10px;
+        width: 300px;
+        height: 350px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 858px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 50px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    nav{
+        position: fixed;
+    }
+
+    ul{
+        position: fixed;
+        width: 50vw;
+        height: 75vh;
+        background: rgb(232, 117, 117);
+        top: 150px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        border-radius: 0 0 1000em 0;
+    }
+    
+    nav ul li{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    nav ul li:first-child{
+        margin-top: 10%;
+    }
+
+    nav ul li a{
+        color: white;
+        font-size: 16px;
+        font-size: 20px;
+    }
+    
+    /* a:hover{
+        color: rgb(232, 117, 117);
+    } */
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero-text{
+        margin-top: 10%;
+    }
+
+    .hero-text h3{
+        font-size: 20px;
+    }
+    
+    .hero-text h1{
+        font-size: 30px;
+    }
+    
+    .hero-text p{
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .letter form{
+        width: 60%;
+    }
+
+    .about h1, .letter h2, .values h1, .services h1{
+        font-size: 40px;
+    }
+
+    .about p{
+        font-size: 17px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero-text{
+        width: 80%;
+        text-align: center;
+    }
+
+    .letter form input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .hero-text{
+        margin-top: 20%;
+    }
+
+    .service-box{
+        text-align: center;
+        margin: 10px;
+        width: 60%;
+        padding: 5px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .contact-container #note{
+        width: 100%;
+    }
+
+    .services{
+        padding: 20px;
+    }
+
+    .footer-row{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #footer-links{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    ul{
+        top: 140px;
+    }
+
+    .hero-text{
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    .title{
+        padding: 7px;
+        font-size: 10px;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+    nav button{
+        width: 80px;
+        height: 40px;
+    }
+
+    .letter h2, .about h1, .services h1, .values h1{
+        font-size: 25px;
+    }
+
+    .about-text p{
+        font-size: 16px;
+    }
+
+    .letter{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .letter form{
+        margin: 10px;
+        width: 100%;
+    }
+
+    .letter form input{
+        width: 100%;
+    }
+
+    .values{
+        padding: 10px;
+    }
+
+    .service-box{
+        margin: 2px;
+        width: 70%;
+    }
+
+    .services h1{
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        padding: 10px;
+    }
+
+    .contact-container{
+        padding: 10px;
+    }
+}
